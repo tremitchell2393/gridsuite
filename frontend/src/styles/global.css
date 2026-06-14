@@ -1,0 +1,92 @@
+/**
+ * Global styles & design tokens.
+ *
+ * Color values mirror the brand identity guidelines and the landing
+ * page v3 dashboard mock (deep navy-slate shell, Signal Teal accent).
+ * The landing page was explicitly noted as a reasonable visual
+ * starting point for the real dashboard — these tokens are lifted
+ * from it directly so the transition from "marketing preview" to
+ * "real product" feels seamless.
+ */
+:root {
+  --shell: #161B2E;
+  --shell-2: #1C2340;
+  --shell-3: #222844;
+  --panel: #252D4A;
+  --border: #2A3254;
+  --border-2: #323A5C;
+
+  --teal: #00D4AA;
+  --teal-dim: #00A886;
+  --teal-glow: rgba(0, 212, 170, 0.1);
+
+  --white: #FFFFFF;
+  --text-1: #F0F2F8;
+  --text-2: #9BA5C0;
+  --text-3: #5A6480;
+
+  --up: #10B981;
+  --down: #F43F5E;
+  --warn: #F59E0B;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --sidebar-width: 220px;
+  --topbar-height: 52px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--shell);
+  color: var(--text-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-2);
+  border-radius: 2px;
+}
+
+/* Utility classes used across components */
+.mono {
+  font-family: var(--font-mono);
+}
+
+.text-up { color: var(--up); }
+.text-down { color: var(--down); }
+.text-warn { color: var(--warn); }
+.text-teal { color: var(--teal); }
+.text-2 { color: var(--text-2); }
+.text-3 { color: var(--text-3); }

@@ -1,0 +1,108 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--shell);
+  background-image: radial-gradient(circle at 30% 20%, rgba(0, 212, 170, 0.06) 0%, transparent 50%);
+}
+
+.login-card {
+  width: 380px;
+  background: var(--shell-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 36px;
+}
+
+.login-logo {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--teal);
+  margin-bottom: 24px;
+}
+
+.login-card h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.login-card input {
+  background: var(--shell-3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--text-1);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.login-card input:focus {
+  border-color: var(--teal);
+}
+
+.login-card button[type="submit"] {
+  background: var(--teal);
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  transition: background 0.15s;
+}
+.login-card button[type="submit"]:hover {
+  background: #00e0ad;
+}
+.login-card button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-error {
+  color: var(--down);
+  font-size: 12px;
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.login-toggle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.login-toggle button {
+  background: none;
+  border: none;
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0;
+}
